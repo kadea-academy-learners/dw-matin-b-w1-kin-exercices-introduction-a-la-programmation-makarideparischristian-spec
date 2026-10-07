@@ -44,4 +44,3 @@ const calculerLivraison = (distanceKm, poidsKg, estUrgent = false) => {
 console.log(calculerLivraison(3, 2));         // 2320
 console.log(calculerLivraison(10, 12, true)); // 9570
 console.log(calculerLivraison(20, 5));        // 8120
-

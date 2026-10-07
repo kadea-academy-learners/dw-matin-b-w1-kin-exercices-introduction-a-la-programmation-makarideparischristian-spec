@@ -21,7 +21,7 @@ Ce comportement n'a jamais été corrigé pour ne pas casser les sites existants
   console.log(typeof null);   // object
   console.log(null === null); // true
 ```
-**Source :** MDN "typeof"
+**Source :** MDN "typeof" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 **IA utilisée ? (prompt + vérification sur MDN) :** oui, j'ai demandé à Gemini
 
 ## F2 — Le convertisseur de saisie
@@ -45,7 +45,7 @@ console.log(isNaN("abc"));
 console.log(Number("abc"));        
 ```
 
-**Source :** MDN « NaN »
+**Source :** MDN « NaN » https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN
 **IA utilisée ? (prompt + vérification sur MDN) :**  « oui, j'ai demandé à Gemini d'expliquer NaN, puis vérifié sur MDN ».
 
 ## F3 — Pair ou impair : le tirage des tickets
@@ -65,7 +65,7 @@ console.log(-7 % 2 === 1);
 console.log(-7 % 2 !== 0);  
 ```
 
-**Source :** MDN, page « Reste (%) » (developer.mozilla.org)
+**Source :** MDN, page « Reste (%) » (developer.mozilla.org) https://developer.mozilla.org/fr/
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui, j'ai demandé à Gemini ce que renvoie -7 % 2, puis vérifié sur MDN (Reste %).
 
@@ -111,7 +111,7 @@ const creerEleve = () => ({ nom: "Lys" });
 console.log(creerEleve());     
 ```
 
-**Source :** MDN « Fonctions fléchées »
+**Source :** MDN « Fonctions fléchées » https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 **IA utilisée ? (prompt + vérification sur MDN) :**  oui. J'ai demandé à chatgpt quand on peut enlever les parenthèses, `return` et les accolades dans une fonction fléchée. J'ai ensuite vérifié sur MDN (Arrow function expressions) et testé les exemples dans la console.
 
 ## F6 — Le compte à rebours
@@ -137,7 +137,7 @@ for (let i = 1; i <= 5; i++) {
 }
 ```
 
-**Source :** MDN « continue » (et « break »).
+**Source :** MDN « continue » (et « break ») https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/continue
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
@@ -164,7 +164,7 @@ for (let i = 1; i <= 15; i++) {
 // Résultat obtenu : 1, 2, Malewa, 4, Wewa, Malewa, 7, 8, Malewa, Wewa, 11, Malewa, 13, 14, MalewaWewa
 ```
 
-**Source :** MDN Reste (%) + Wikipédia « Fizz buzz »
+**Source :** MDN Reste (%) + Wikipédia « Fizz buzz » https://fr.wikipedia.org/wiki/Fizz_buzz
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
@@ -182,7 +182,7 @@ Le résultat est une chaîne de caractères, donc on l'utilise pour l'affichage 
 console.log((75000).toLocaleString("fr-FR"));
 
 ```
-**Source :** MDN, Number.prototype.toLocaleString().
+**Source :** MDN, Number.prototype.toLocaleString() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M3 — Le détecteur de champs vides (Truthy / Falsy)
@@ -200,7 +200,7 @@ console.log(Boolean(-0));
 console.log(Boolean([]));   
 console.log(Boolean({}));   
 ```
-**Source :** MDN « Falsy » (glossaire)
+**Source :** MDN « Falsy » (glossaire) https://developer.mozilla.org/fr/docs/Glossary/Falsy
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M4 — Le score par défaut : || contre ??
@@ -221,7 +221,7 @@ console.log("" ?? "aucun");
 console.log(null ?? "aucun"); 
 ```
 
-**Source :** MDN « Opérateur de coalescence des nuls (??) »
+**Source :** MDN « Opérateur de coalescence des nuls (??) » https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M5 — La vitre teintée (portée de bloc)
@@ -264,7 +264,7 @@ const test = () => {
 console.log(test()); 
 ```
 
-**Source :** MDN « Insertion automatique de points-virgules »
+**Source :** MDN « Insertion automatique de points-virgules » https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Lexical_grammar
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M7 — La tirelire numérique
@@ -289,7 +289,7 @@ x %= 4;  console.log(x);
 x **= 3; console.log(x); 
 ```
 
-**Source :** MDN « Opérateurs d'affectation » (Assignment operators)
+**Source :** MDN « Opérateurs d'affectation » (Assignment operators) https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Assignment
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
@@ -314,7 +314,7 @@ do {
 console.log(a, tours);
 ```
 
-**Source :** MDN « do...while » et « while ».
+**Source :** MDN « do...while » et « while » https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/do...while
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
@@ -336,7 +336,7 @@ console.log((0.1 + 0.2).toFixed(2));
 console.log((0.1 + 0.2).toFixed(2) + 1); 
 ```
 
-**Source :** MDN, Number et Number.prototype.toFixed
+**Source :** MDN, Number et Number.prototype.toFixed https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
@@ -359,7 +359,7 @@ console.log(total); // 48
 
 ```
 
-**Source :** MDN, Array.prototype.reduce()
+**Source :** MDN, Array.prototype.reduce() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## A3 — L'inventaire en console
@@ -377,7 +377,7 @@ const liste = [{ nom: "A", stock: 1 }];
 console.log(liste.find((p) => p.nom === "Z")); 
 console.log(liste.filter((p) => p.nom === "Z"));
 ```
-**Source :** MDN, console.table(), Array.prototype.find() et filter()
+**Source :** MDN, console.table(), Array.prototype.find() et filter() https://developer.mozilla.org/fr/docs/Web/API/console/table
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## A4 — Le classement de la promo
@@ -399,7 +399,7 @@ console.log(notes);
 console.log([10, 9, 1].sort()); 
 ```
 
-**Source :** MDN, Array.prototype.sort()
+**Source :** MDN, Array.prototype.sort() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## A5 — Le nombre mystère
@@ -419,6 +419,5 @@ console.log(2 ** 7); // 128
 console.log(Math.ceil(Math.log2(100)));
 ```
 
-**Source :** 
-Wikipédia, « Recherche dichotomique »
+**Source :** Wikipédia, « Recherche dichotomique » https://fr.wikipedia.org/wiki/Recherche_dichotomique
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
