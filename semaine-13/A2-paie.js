@@ -20,5 +20,34 @@ La méthode .reduce() n'a pas été vue en atelier. Explique ce qu'elle fait et 
 // ===== FIN ÉNONCÉ =====
 
 // ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
+const heuresSemaine = [8, 9, 10, 8, 7, 6];
+const jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 
+// Étape 2 : total des heures avec forEach et un accumulateur
+let totalHeures = 0;
+heuresSemaine.forEach((heures) => {
+	totalHeures += heures;
+});
+
+// Étape 3 : salaire avec heures supplémentaires
+const calculerSalaire = (heures, tauxHoraire = 2500) => {
+	if (heures <= 40) {
+		return heures * tauxHoraire;
+	}
+	const heuresSupplementaires = heures - 40;
+	return 40 * tauxHoraire + heuresSupplementaires * tauxHoraire * 1.5;
+};
+
+const salaire = calculerSalaire(totalHeures);
+
+// Étape 4 : jour le plus chargé avec une boucle for
+let indexMax = 0;
+for (let i = 1; i < heuresSemaine.length; i++) {
+	if (heuresSemaine[i] > heuresSemaine[indexMax]) {
+		indexMax = i;
+	}
+}
+
+console.log(`Total : ${totalHeures} h — Salaire : ${salaire} FC`);
+console.log(`Jour le plus chargé : ${jours[indexMax]} (${heuresSemaine[indexMax]} h)`);
 
