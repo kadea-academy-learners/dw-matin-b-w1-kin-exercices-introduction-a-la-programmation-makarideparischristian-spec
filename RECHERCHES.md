@@ -261,18 +261,23 @@ MDN « var » et « let »
 **Question :** Le troisième bug vient de l'« insertion automatique de point-virgule » (ASI). Explique ce mécanisme en 3 lignes.
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
+L'insertion automatique de point-virgule (ASI) est un mécanisme de JavaScript : quand le point-virgule manque à la fin d'une instruction, le moteur en ajoute un lui-même, selon des règles précises.
+Une de ces règles concerne `return` : si un retour à la ligne suit directement `return`, JavaScript écrit `return;` et la valeur qui est sur la ligne suivante est ignorée. La fonction renvoie alors `undefined`. Pour éviter ce piège, on écrit toujours la valeur sur la même ligne que `return`.
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+const test = () => {
+	return
+	42;
+};
+console.log(test()); 
 ```
 
 **Source :** 
-
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+MDN « Insertion automatique de points-virgules »
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M7 — La tirelire numérique
 
