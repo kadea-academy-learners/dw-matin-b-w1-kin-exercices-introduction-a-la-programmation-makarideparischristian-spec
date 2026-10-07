@@ -85,7 +85,7 @@ C'est souvent déconseillé parce que la lecture devient difficile dès qu'il y 
   console.log(3 < 5 ? 0 : 3 < 18 ? 500 : 1000); // 0
 ```
 
-**Source :**  MDN, « Opérateur conditionnel (ternaire) » (developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
+**Source :**  MDN, « Opérateur conditionnel (ternaire) » (https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 
 **IA utilisée ? (prompt + vérification sur MDN) :** « oui, j'ai demandé à Gemini si on peut enchaîner des ternaires, puis vérifié sur MDN ».
 
@@ -242,7 +242,7 @@ if (true) { let d = 1; }
 try { console.log(d); } catch (e) { console.log(e.message); } 
 ```
 
-**Source :** MDN « var » et « let »
+**Source :** MDN « var » et « let » https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let
 **IA utilisée ? (prompt + vérification sur MDN) :** oui, j'ai demandé à Gemini pourquoi var est banni et ce que sont la portée de fonction et le hoisting, puis vérifié sur MDN (var et let). Je n'ai pas testé var dans le code, car il est interdit dans ce cours.
 
 ## M6 — Le détective du return
