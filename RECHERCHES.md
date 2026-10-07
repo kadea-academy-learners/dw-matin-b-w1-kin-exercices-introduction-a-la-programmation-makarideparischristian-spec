@@ -98,18 +98,26 @@ node semaine-13/NOM-DU-FICHIER-F4.js
 **Question :** Quand peut-on enlever les parenthèses autour des paramètres, et quand peut-on enlever return et les accolades ?
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
+Les parenthèses autour du paramètre peuvent être enlevées quand il y a un seul paramètre simple : `nombre => nombre * nombre`. Elles sont obligatoires s'il n'y a aucun paramètre `() =>`, s'il y en a plusieurs `(a, b) =>`, ou s'il y a une valeur par défaut.
+On peut enlever `return` et les accolades quand le corps tient en une seule expression : le résultat est alors renvoyé automatiquement. Dès qu'il y a plusieurs instructions, il faut les accolades et `return`. Pour renvoyer un objet sans `return`, on l'entoure de parenthèses : `() => ({ nom: "Lys" })`.
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle ici le tconst double = n => n * 2;
+console.log(double(4));        // 8
+
+const somme = (a, b) => a + b;
+console.log(somme(2, 3));      // 5
+
+const creerEleve = () => ({ nom: "Lys" });
+console.log(creerEleve());     // { nom: 'Lys' }est que tu as exécuté et le résultat obtenu
 ```
 
 **Source :** 
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :**  oui. J'ai demandé à Claude quand on peut enlever les parenthèses, `return` et les accolades dans une fonction fléchée. J'ai ensuite vérifié sur MDN (Arrow function expressions) et testé les exemples dans la console.
 
 ## F6 — Le compte à rebours
 
