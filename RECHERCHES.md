@@ -152,17 +152,25 @@ for (let i = 1; i <= 5; i++) {
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
+FizzBuzz est célèbre en entretien parce que c'est un exercice très simple qui permet de vérifier rapidement les bases : boucle, modulo, conditions et ordre des tests. Beaucoup de candidats échouent sur le cas « multiple de 3 et de 5 », en le plaçant après les autres conditions.
+Il montre aussi si le candidat sait écrire un code propre, lisible et le tester, sans avoir besoin d'un algorithme compliqué.
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
-```
+// colle**Mon test dans la console :**
+for (let i = 1; i <= 15; i++) {
+	if (i % 3 === 0 && i % 5 === 0) console.log("MalewaWewa");
+	else if (i % 3 === 0) console.log("Malewa");
+	else if (i % 5 === 0) console.log("Wewa");
+	else console.log(i);
+}
+// Résultat obtenu : 1, 2, Malewa, 4, Wewa, Malewa, 7, 8, Malewa, Wewa, 11, Malewa, 13, 14, MalewaWewa
 
-**Source :** 
+**Source :** MDN Reste (%) + Wikipédia « Fizz buzz »
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M2 — Le distributeur automatique (DAB)
 
