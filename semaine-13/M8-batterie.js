@@ -20,14 +20,14 @@ Quelle est la différence entre while et do...while ? Que donnerait l'étape 4 a
 // ===== FIN ÉNONCÉ =====
 
 // ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
-const simulerDecharge = (batterieDEpart) => {
-    let batterie = batterieDEpart;
-    let heure = 0;
-    do {
-        batterie -= consommationParHeure;
-        heures++;
-    } while(batterie > seuil);
-    return { batterie, heures };
-};
 
+let batterie = 100;
+let heures = 0;
+
+while(batterie > 20){
+    batterie -= 15;
+    heures++;
+}
+
+console.log(`Après ${heures}h, batterie à ${batterie} % : branche ton téléphone !`);
 
