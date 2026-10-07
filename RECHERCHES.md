@@ -31,17 +31,24 @@ Ce comportement n'a jamais été corrigé pour ne pas casser les sites existants
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
+`NaN` veut dire « Not a Number » : c'est la valeur que JavaScript renvoie quand un calcul numérique n'a pas de résultat valide, par exemple `Number("abc")`. Bizarrement, son type est `number`.
+`NaN === NaN` renvoie `false` car, d'après la norme IEEE 754, NaN n'est égal à aucune valeur, pas même à lui-même. On ne peut donc pas le détecter avec `===`.
+Pour le détecter, on utilise `Number.isNaN(valeur)`. Il est plus fiable que l'ancienne `isNaN()`, qui convertit d'abord la valeur en nombre (`isNaN("abc")` renvoie `true` alors que `"abc"` n'est pas NaN).
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle ici le console.log(NaN === NaN);          // false
+console.log(Number.isNaN(NaN));    // true
+console.log(Number.isNaN("abc"));  // false
+console.log(isNaN("abc"));         // true (l'ancienne fonction convertit d'abord)
+console.log(Number("abc"));        // NaNtest que tu as exécuté et le résultat obtenu
 ```
 
 **Source :** 
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :**  MDN, pages « NaN » et « Number.isNaN() » (developer.mozilla.org)
 
 ## F3 — Pair ou impair : le tirage des tickets
 
@@ -49,15 +56,20 @@ Ce comportement n'a jamais été corrigé pour ne pas casser les sites existants
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
+En JavaScript, le résultat de `%` prend le signe du premier nombre (le dividende). Donc `-7 % 2` renvoie `-1`, et non `1`.
+Si on teste `% 2 === 1` pour détecter un impair, `-7` ne serait pas reconnu comme impair, car `-1 === 1` est `false`. Avec `% 2 !== 0`, on teste simplement « le reste n'est pas 0 », ce qui marche pour les positifs comme pour les négatifs (`-1 !== 0` est `true`).
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle iciconsole.log(-7 % 2);        // -1
+console.log(-7 % 2 === 1);  // false
+console.log(-7 % 2 !== 0);  // true le test que tu as exécuté et le résultat obtenu
 ```
 
-**Source :** 
+**Source :** MDN, page « Reste (%) » (developer.mozilla.org)
+
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
