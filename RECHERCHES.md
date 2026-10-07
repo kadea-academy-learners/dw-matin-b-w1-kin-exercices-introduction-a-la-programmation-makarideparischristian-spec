@@ -284,18 +284,26 @@ MDN « Insertion automatique de points-virgules »
 **Question :** Cite tous les opérateurs d'affectation composée (+=, -=…) et donne un exemple pour chacun.
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
+Un opérateur d'affectation composée combine une opération et une affectation : `a += 5` équivaut à `a = a + 5`. Les principaux sont :
+`+=` (`x += 2`), `-=` (`x -= 2`), `*=` (`x *= 2`), `/=` (`x /= 2`), `%=` (`x %= 2`) et `**=` (`x **= 2`, puissance).
+Il existe aussi des versions pour les opérations sur les bits (`<<=`, `>>=`, `>>>=`, `&=`, `^=`, `|=`) et pour les opérateurs logiques : `&&=` (`x &&= y`), `||=` (`x ||= y`) et `??=` (`x ??= y`, affecte seulement si x est null ou undefined).
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+let x = 10;
+x += 5;  console.log(x); // 15
+x -= 3;  console.log(x); // 12
+x *= 2;  console.log(x); // 24
+x /= 4;  console.log(x); // 6
+x %= 4;  console.log(x); // 2
+x **= 3; console.log(x); // 8
 ```
 
-**Source :** 
+**Source :** MDN « Opérateurs d'affectation » (Assignment operators)
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M8 — La batterie qui se décharge
 
