@@ -175,20 +175,23 @@ for (let i = 1; i <= 15; i++) {
 ## M2 — Le distributeur automatique (DAB)
 
 **Question :** Comment afficher 75000 sous la forme 75 000 avec toLocaleString() ?
+# M2 — Le distributeur automatique (DAB)
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
+`toLocaleString()` met un nombre au format d'une langue. Avec `(75000).toLocaleString("fr-FR")`, on obtient "75 000" : en français, les milliers sont séparés par une espace (une espace insécable fine, pas une espace normale).
+Le résultat est une chaîne de caractères, donc on l'utilise pour l'affichage seulement, pas pour continuer à calculer. On peut aussi ajouter des options, par exemple `toLocaleString("fr-FR", { style: "currency", currency: "CDF" })` pour afficher une monnaie.
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+console.log((75000).toLocaleString("fr-FR"));
+
 ```
 
 **Source :** 
-
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+MDN, Number.prototype.toLocaleString().
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M3 — Le détecteur de champs vides (Truthy / Falsy)
 
