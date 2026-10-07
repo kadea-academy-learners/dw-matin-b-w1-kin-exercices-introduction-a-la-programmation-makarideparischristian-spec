@@ -262,7 +262,8 @@
 **Question :** Pourquoi 0.1 + 0.2 ne donne-t-il pas 0.3 en JavaScript ? Et pourquoi toFixed() est un piège si on veut continuer à calculer ?
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
+JavaScript stocke les nombres décimaux en binaire (norme IEEE 754). Certains décimaux comme 0.1 et 0.2 n'ont pas d'écriture exacte en binaire, comme 1/3 n'en a pas en base 10 : l'ordinateur garde une approximation. Quand on les additionne, l'erreur apparaît : 0.1 + 0.2 donne 0.30000000000000004, donc `0.1 + 0.2 === 0.3` vaut `false`.
+`toFixed()` est un piège car il renvoie une chaîne de caractères, pas un nombre : `(0.1 + 0.2).toFixed(2) + 1` donne "0.301" (concaténation) au lieu d'additionner. Il vaut mieux garder les nombres bruts pendant tout le calcul, arrondir une seule fois à la fin (comme avec `Math.round()`) et réserver `toFixed()` à l'affichage.
 ...
 
 **Mon test dans la console :**
@@ -280,7 +281,8 @@
 **Question :** La méthode .reduce() n'a pas été vue en atelier. Explique ce qu'elle fait et réécris l'étape 2 avec elle.
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
+`.reduce()` parcourt un tableau et le réduit à une seule valeur (un total, par exemple). Elle prend une fonction `(accumulateur, élément)` et une valeur de départ : à chaque tour, ce qui est renvoyé devient l'accumulateur du tour suivant. Contrairement à `.forEach()`, elle renvoie un résultat, donc pas besoin de variable `let` extérieure.
+Étape 2 réécrite : `const totalHeures = heuresSemaine.reduce((accumulateur, heures) => accumulateur + heures, 0);` Le calcul donne 0+8, +9, +10, +8, +7, +6 = 48.
 ...
 
 **Mon test dans la console :**
