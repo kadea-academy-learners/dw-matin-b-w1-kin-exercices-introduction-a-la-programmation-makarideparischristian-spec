@@ -19,5 +19,21 @@ Recherche (à rédiger dans RECHERCHES.md) :
 // ===== FIN ÉNONCÉ =====
 
 // ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
+// Étapes 1 et 3 : compte à rebours de 10 à 1, en sautant le nombre 5
+for (let i = 10; i >= 1; i--) {
+	if (i === 5) {
+		continue; // passe directement au tour suivant
+	}
+	console.log(i);
+}
+console.log("Décollage !");
 
+// Étape 2 : seulement les nombres pairs
+for (let i = 10; i >= 1; i--) {
+	if (i % 2 !== 0) {
+		continue;
+	}
+	console.log(i);
+}
+console.log("Décollage !");
 

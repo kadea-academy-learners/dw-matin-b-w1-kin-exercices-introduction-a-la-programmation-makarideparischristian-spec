@@ -125,15 +125,24 @@ console.log(creerEleve());     // { nom: 'Lys' }est que tu as exécuté et le r�
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
+`continue` arrête le tour de boucle en cours et passe directement au tour suivant : la boucle continue de tourner. Par exemple, avec `if (i === 5) { continue; }`, le 5 est ignoré mais les autres nombres sont affichés.
+`break` est différent : il arrête complètement la boucle, et le programme continue après elle. Avec `break` à `i === 5`, on afficherait 10, 9, 8, 7, 6 puis on sortirait de la boucle.
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle ici le test quefor (let i = 1; i <= 5; i++) {
+	if (i === 3) continue;
+	console.log(i); // 1, 2, 4, 5
+}
+for (let i = 1; i <= 5; i++) {
+	if (i === 3) break;
+	console.log(i); // 1, 2
+} tu as exécuté et le résultat obtenu
 ```
 
-**Source :** 
+**Source :** MDN « continue » (et « break »).
 
 **IA utilisée ? (prompt + vérification sur MDN) :** non
 
