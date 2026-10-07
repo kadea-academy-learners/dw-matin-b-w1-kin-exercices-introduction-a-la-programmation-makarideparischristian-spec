@@ -239,18 +239,22 @@ MDN « Opérateur de coalescence des nuls (??) »
 **Question :** Pourquoi var est-il banni du code moderne ? Cherche ce que sont la portée de fonction et le « hoisting ».
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
-
+`var` est banni du code moderne parce qu'il a une portée de fonction et non de bloc : une variable `var` déclarée dans un `if` ou une boucle reste visible en dehors, ce qui crée des bugs difficiles à repérer. Il permet aussi de déclarer deux fois la même variable sans erreur.
+Le hoisting (« remontée ») veut dire que les déclarations `var` sont déplacées en haut de leur fonction avant l'exécution : on peut lire la variable avant sa ligne de déclaration et obtenir `undefined`, sans erreur. `let` et `const` sont aussi remontés, mais restent inutilisables avant leur déclaration (ReferenceError), ce qui est plus sûr.
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle ici le test console.log(a); // undefined (hoisting de var)
+var a = 5;
+if (true) { var b = 1; }
+console.log(b); // 1 (var ignore le bloc)que tu as exécuté et le résultat obtenu
 ```
 
 **Source :** 
-
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+MDN « var » et « let »
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M6 — Le détective du return
 
