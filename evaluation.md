@@ -1,10 +1,10 @@
 # 📊 Évaluation automatique — Semaine 13 (JavaScript)
 
-> Générée le 2026-10-07 13:53 UTC · commit `4bec5f8` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
+> Générée le 2026-10-07 14:38 UTC · commit `4478652` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
 
 ## Note finale : **13 / 15**
 
-Exercices : **90 / 95** · Parfaits : 15 / 19 · Non rendus : 0
+Exercices : **92 / 95** · Parfaits : 16 / 19 · Non rendus : 0
 
 ## 1. Résultat par exercice
 
@@ -23,7 +23,7 @@ Exercices : **90 / 95** · Parfaits : 15 / 19 · Non rendus : 0
 | **M5** — La vitre teintée (portée de bloc) | **4** | 🟡 Règles non respectées | 3/3 | 2 | ✅ | Plus d'erreur, mais les déclarations doivent rester dans leurs blocs et tes prédictions/explications doivent être en commentaire.<br>• Ne déplace pas la déclaration de `commune` : elle doit rester dans le bloc if.<br>• Ne déplace pas la déclaration de `secret` : elle doit rester dans `afficher`.<br>• Écris tes prédictions et explique pourquoi `afficher` ne s'exécutait jamais (l'erreur arrête le programme).<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **M6** — Le détective du return | **5** | ✅ Parfait | 5/5 | 2 | ✅ | Parfait ! return et console.log sont bien distingués, le piège de l'ASI est corrigé et expliqué.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **M7** — La tirelire numérique | **5** | ✅ Parfait | 3/3 | 2 | ✅ | Parfait ! Accumulateur bien initialisé, 12 tours exacts et bonus toutes les 4 semaines : 27000 FC.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
-| **M8** — La batterie qui se décharge | **3** | 🟠 Résultat incorrect | 2/3 | 2 | ❌ | Le résultat final est faux : la boucle doit continuer tant que batterie > 20, retirer 15 et compter les heures (6 h, 10 %).<br>• En partant de 15 %, la boucle ne doit faire aucun tour (Après 0 h, batterie à 15 %).<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
+| **M8** — La batterie qui se décharge | **5** | ✅ Parfait | 3/3 | 2 | ✅ | Parfait ! Boucle while avec condition d'arrêt sûre et compteur : 6 h, 10 %.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **A1** — Kadea Express v2 : le calculateur de livraison | **4** | 🟡 Règles non respectées | 9/9 | 2 | ✅ | Les tarifs sont justes, mais respecte les consignes : fonction fléchée, `estUrgent = false` par défaut, Math.round() et if / else if / else.<br>• Calcule le tarif de base avec `if / else if / else`.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **A2** — Le moteur de paie v2 | **5** | ✅ Parfait | 7/7 | 2 | ✅ | Parfait ! Accumulateur avec .forEach(), heures supplémentaires et recherche du maximum corrects.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **A3** — L'inventaire en console | **5** | ✅ Parfait | 7/7 | 2 | ✅ | Parfait ! Tableau d'objets maîtrisé avec filter, map et find, cas undefined géré et vérifié avec console.table().<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
@@ -37,8 +37,8 @@ Exercices : **90 / 95** · Parfaits : 15 / 19 · Non rendus : 0
 | Fondations : variables, types primitifs et conversions | Avancé (93 %) | **3** | const par défaut et let uniquement pour les valeurs réassignées, choix justifiés. typeof (y compris null) et conversions Number(''), Number('abc') maîtrisés. Truthy / falsy expliqués.<br>_Preuves : F1, F2, M3_ |
 | Logique conditionnelle et opérateurs | Avancé (93 %) | **3** | Conditions ordonnées du cas le plus restrictif au plus général (FizzBuzz, DAB) et cas limites testés (0, négatif, plafond). ?? utilisé à bon escient.<br>_Preuves : F3, F4, M1, M2, M4_ |
 | Fonctions, return et portée | Compétent : Satisfaisant (89 %) | **2** | Les fonctions renvoient leur résultat avec return (pas de console.log à l'intérieur) et sont appelées avec les bons arguments. Portée de bloc respectée : aucune ReferenceError.<br>_Preuves : F5, M2, M5, M6_ |
-| Boucles, accumulateurs et méthodes de tableau | Avancé (90 %) | **3** | Boucle adaptée choisie (for / while). Tableaux d'objets traités avec .filter(), .map(), .find() et un return dans chaque callback ; cas undefined de .find() géré ; console.table() utilisé.<br>_Preuves : F6, M1, M7, M8 ; niveau Avancé : A2, A3, A4, A5_ |
-| Recherche, qualité du code et restitution | Compétent : Satisfaisant (82 %) | **2** | Recherches reformulées et sourcées pour la majorité des exercices. Règles de code respectées (const, ===, fléchées, backticks).<br>_Recherches 67 % · commits par exercice 95 % · règles de code 100 %_ |
+| Boucles, accumulateurs et méthodes de tableau | Avancé (100 %) | **3** | Boucle adaptée choisie (for / while). Tableaux d'objets traités avec .filter(), .map(), .find() et un return dans chaque callback ; cas undefined de .find() géré ; console.table() utilisé.<br>_Preuves : F6, M1, M7, M8 ; niveau Avancé : A2, A3, A4, A5_ |
+| Recherche, qualité du code et restitution | Compétent : Satisfaisant (83 %) | **2** | Recherches reformulées et sourcées pour la majorité des exercices. Règles de code respectées (const, ===, fléchées, backticks).<br>_Recherches 67 % · commits par exercice 100 % · règles de code 100 %_ |
 | **Total** | | **13 / 15** | |
 
 ## Comment lire cette évaluation
