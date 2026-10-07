@@ -29,5 +29,47 @@ Comment afficher seulement les colonnes nom et stock avec console.table() ? Et q
 // ===== FIN ÉNONCÉ =====
 
 // ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
+const TAUX = 2800; // taux fictif
 
+// Étape 1 : le tableau d'objets
+const inventaire = [
+	{ id: 101, nom: "Clé USB 32 Go", categorie: "Informatique", prixFC: 14000, stock: 25 },
+	{ id: 102, nom: "Sac à dos Kadea", categorie: "Accessoires", prixFC: 42000, stock: 0 },
+	{ id: 103, nom: "Souris sans fil", categorie: "Informatique", prixFC: 28000, stock: 12 },
+	{ id: 104, nom: "Gourde isotherme", categorie: "Accessoires", prixFC: 21000, stock: 8 },
+	{ id: 105, nom: "Casque audio", categorie: "Informatique", prixFC: 70000, stock: 0 },
+	{ id: 106, nom: "Carnet de notes", categorie: "Papeterie", prixFC: 7000, stock: 40 },
+];
+
+// Étape 2 : affichage
+console.table(inventaire);
+
+// Étape 3 : catégorie Informatique
+const produitsInformatique = inventaire.filter(
+	(produit) => produit.categorie === "Informatique"
+);
+console.log(`${produitsInformatique.length} produits Informatique`);
+console.table(produitsInformatique);
+
+// Étape 4 : ajout du prix en USD
+const inventaireUSD = inventaire.map((produit) => ({
+	...produit,
+	prixUSD: Math.round(produit.prixFC / TAUX),
+}));
+console.table(inventaireUSD);
+
+// Étape 5 : recherche par id
+const chercherProduit = (id) => {
+	const produit = inventaire.find((element) => element.id === id);
+	return produit === undefined ? "Produit introuvable" : produit;
+};
+console.log(chercherProduit(104));
+console.log(chercherProduit(999));
+
+// Étape 6 : produits en rupture de stock
+const produitsEnRupture = inventaire.filter((produit) => produit.stock === 0);
+console.log(`${produitsEnRupture.length} produits en rupture`);
+
+// Recherche : seulement les colonnes nom et stock
+console.table(inventaire, ["nom", "stock"]);
 
