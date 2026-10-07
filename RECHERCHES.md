@@ -79,17 +79,19 @@ console.log(-7 % 2 !== 0);  // true le test que tu as exécuté et le résultat 
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
+Oui, on peut enchaîner plusieurs ternaires : `age < 5 ? 0 : age < 18 ? 500 : 1000`. Le deuxième ternaire se place dans la partie « sinon » du premier.
+C'est souvent déconseillé parce que la lecture devient difficile dès qu'il y a plus de deux niveaux : on doit deviner quelle condition appartient à quelle branche. Un `if / else if / else` est plus clair, plus facile à déboguer et à modifier. On garde le ternaire pour les cas simples à deux choix.
 ...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+node semaine-13/NOM-DU-FICHIER-F4.js
 ```
 
-**Source :** 
+**Source :**  MDN, « Opérateur conditionnel (ternaire) » (developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** MDN, « Opérateur conditionnel (ternaire) » (developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 
 ## F5 — Ma première fonction fléchée
 
