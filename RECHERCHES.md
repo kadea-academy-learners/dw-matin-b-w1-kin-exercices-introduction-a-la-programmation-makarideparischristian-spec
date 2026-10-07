@@ -11,6 +11,8 @@
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
+`typeof null` renvoie "object" à cause d'un bug des tout débuts de JavaScript (1995). À l'époque, les valeurs étaient stockées avec une étiquette de type, et celle des objets était 0. `null` était représenté par le pointeur nul (tous les bits à 0), donc il recevait la même étiquette que les objets.
+Ce comportement n'a jamais été corrigé pour ne pas casser les sites existants. `null` est bien une valeur primitive, pas un objet. Pour le tester, on utilise `valeur === null`.
 ...
 
 **Mon test dans la console :**
