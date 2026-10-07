@@ -16,8 +16,12 @@ vide, rempli, vide, rempli, vide, vide, vide, rempli, rempli, vide
 Recherche (à rédiger dans RECHERCHES.md) :
 Quelle est la liste complète des valeurs falsy en JavaScript ? (Indice : il y en a plus que dans cet exercice.)
 `;
-// ===== FIN ÉNONCÉ =====
 
-// ✍️ Ton code ici 👇 (règles : const/let, ===, gabarits littéraux, fonctions fléchées, camelCase)
+const estRempli = (valeur) => (valeur ? "rempli" : "vide");
 
+const valeursATester = ["", "Esther", 0, 42, null, undefined, NaN, " ", "0", false];
+
+valeursATester.forEach((valeur) => {
+	console.log(estRempli(valeur));
+});
 

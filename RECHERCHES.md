@@ -197,19 +197,22 @@ MDN, Number.prototype.toLocaleString().
 
 **Question :** Quelle est la liste complète des valeurs falsy en JavaScript ? (Indice : il y en a plus que dans cet exercice.)
 
-**Ma réponse (avec mes mots, 3 à 5 lignes) :**
+En JavaScript, il y a huit valeurs falsy : `false`, `0`, `-0`, `0n` (le BigInt zéro), `""` (chaîne vide, ainsi que `''` et les gabarits vides), `null`, `undefined` et `NaN`. Toutes les autres valeurs sont truthy, y compris `"0"`, `" "`, `[]`, `{}` et `"false"`.
+Il y a aussi un cas particulier, `document.all`, qui est falsy dans les navigateurs, mais on le rencontre très rarement.
 
-...
 
 **Mon test dans la console :**
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle iconsole.log(Boolean(0n));   // false
+console.log(Boolean(-0));   // false
+console.log(Boolean([]));   // true
+console.log(Boolean({}));   // trueci le test que tu as exécuté et le résultat obtenu
 ```
 
-**Source :** 
+**Source :** MDN « Falsy » (glossaire)
 
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M4 — Le score par défaut : || contre ??
 
