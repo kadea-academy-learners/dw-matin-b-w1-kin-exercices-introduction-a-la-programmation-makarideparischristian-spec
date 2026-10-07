@@ -1,10 +1,10 @@
 # 📊 Évaluation automatique — Semaine 13 (JavaScript)
 
-> Générée le 2026-10-07 14:38 UTC · commit `4478652` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
+> Générée le 2026-10-07 15:02 UTC · commit `c81ac44` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
 
 ## Note finale : **13 / 15**
 
-Exercices : **92 / 95** · Parfaits : 16 / 19 · Non rendus : 0
+Exercices : **93 / 95** · Parfaits : 17 / 19 · Non rendus : 0
 
 ## 1. Résultat par exercice
 
@@ -24,7 +24,7 @@ Exercices : **92 / 95** · Parfaits : 16 / 19 · Non rendus : 0
 | **M6** — Le détective du return | **5** | ✅ Parfait | 5/5 | 2 | ✅ | Parfait ! return et console.log sont bien distingués, le piège de l'ASI est corrigé et expliqué.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **M7** — La tirelire numérique | **5** | ✅ Parfait | 3/3 | 2 | ✅ | Parfait ! Accumulateur bien initialisé, 12 tours exacts et bonus toutes les 4 semaines : 27000 FC.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **M8** — La batterie qui se décharge | **5** | ✅ Parfait | 3/3 | 2 | ✅ | Parfait ! Boucle while avec condition d'arrêt sûre et compteur : 6 h, 10 %.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
-| **A1** — Kadea Express v2 : le calculateur de livraison | **4** | 🟡 Règles non respectées | 9/9 | 2 | ✅ | Les tarifs sont justes, mais respecte les consignes : fonction fléchée, `estUrgent = false` par défaut, Math.round() et if / else if / else.<br>• Calcule le tarif de base avec `if / else if / else`.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
+| **A1** — Kadea Express v2 : le calculateur de livraison | **5** | ✅ Parfait | 9/9 | 2 | ✅ | Parfait ! Règles métier, paramètre par défaut, TVA et arrondi corrects, y compris aux bornes.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **A2** — Le moteur de paie v2 | **5** | ✅ Parfait | 7/7 | 2 | ✅ | Parfait ! Accumulateur avec .forEach(), heures supplémentaires et recherche du maximum corrects.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **A3** — L'inventaire en console | **5** | ✅ Parfait | 7/7 | 2 | ✅ | Parfait ! Tableau d'objets maîtrisé avec filter, map et find, cas undefined géré et vérifié avec console.table().<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
 | **A4** — Le classement de la promo | **4** | 🟡 Règles non respectées | 9/9 | 2 | ✅ | Les résultats sont justes, mais respecte les consignes : boucle dans calculerMoyenne, .map(), .filter(), .find() avec return, if / else if / else.<br>• Attribue la mention avec `if / else if / else`.<br>📚 Recherche incomplète : pas de lien précis vers une page source (MDN de préférence). |
