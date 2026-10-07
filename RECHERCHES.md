@@ -220,17 +220,19 @@ console.log(Boolean({}));   // trueci le test que tu as exécuté et le résulta
 
 **Ma réponse (avec mes mots, 3 à 5 lignes) :**
 
-...
-
-**Mon test dans la console :**
+L'opérateur `??` (coalescence des nuls) renvoie sa valeur de droite uniquement quand celle de gauche est `null` ou `undefined`. Sinon, il garde la valeur de gauche.
+`||` est différent : il renvoie la valeur de droite dès que celle de gauche est falsy, donc aussi pour `0`, `""`, `false` ou `NaN`. Avec `0 || "aucun"` on obtient "aucun", alors que `0 ?? "aucun"` donne `0`. On utilise `??` quand `0` ou une chaîne vide sont des valeurs valides.
 
 ```js
-// colle ici le test que tu as exécuté et le résultat obtenu
+// colle ici lconsole.log(0 || "aucun");   // aucun
+console.log(0 ?? "aucun");   // 0
+console.log("" ?? "aucun");  // (chaîne vide)
+console.log(null ?? "aucun"); // aucune test que tu as exécuté et le résultat obtenu
 ```
 
 **Source :** 
-
-**IA utilisée ? (prompt + vérification sur MDN) :** non
+MDN « Opérateur de coalescence des nuls (??) »
+**IA utilisée ? (prompt + vérification sur MDN) :** oui
 
 ## M5 — La vitre teintée (portée de bloc)
 
