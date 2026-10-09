@@ -1,6 +1,6 @@
 # 📊 Évaluation automatique — Semaine 13 (JavaScript)
 
-> Générée le 2026-10-09 08:40 UTC · commit `2acc0e9` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
+> Générée le 2026-10-09 08:57 UTC · commit `1951b77` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
 
 ## Note finale : **14 / 15**
 
@@ -16,7 +16,7 @@ Exercices : **90 / 95** · Parfaits : 17 / 19 · Non rendus : 0
 | **F4** — Le contrôleur du bus | **5** | ✅ Parfait | 5/5 | 3 | ✅ | Parfait ! Ternaire simple et conditions à trois branches corrects, bornes respectées.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **F5** — Ma première fonction fléchée | **5** | ✅ Parfait | 4/4 | 3 | ✅ | Parfait ! Fonctions fléchées concises avec retour implicite et gabarit littéral.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **F6** — Le compte à rebours | **5** | ✅ Parfait | 2/2 | 3 | ✅ | Parfait ! Les 3 parties de la boucle `for` sont maîtrisées et `continue` est bien placé.<br>📚 Recherche complète, testée et sourcée (MDN). |
-| **M1** — FizzBuzz kinois | **5** | ✅ Parfait | 3/3 | 3 | ✅ | Parfait ! Conditions ordonnées du cas le plus restrictif au plus général, résultat exact de 1 à 30.<br>📚 Recherche complète ; privilégie une source MDN. |
+| **M1** — FizzBuzz kinois | **5** | ✅ Parfait | 3/3 | 3 | ✅ | Parfait ! Conditions ordonnées du cas le plus restrictif au plus général, résultat exact de 1 à 30.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **M2** — Le distributeur automatique (DAB) | **5** | ✅ Parfait | 9/9 | 3 | ✅ | Parfait ! Règles vérifiées dans le bon ordre, cas limites gérés, la fonction renvoie son message.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **M3** — Le détecteur de champs vides (Truthy / Falsy) | **5** | ✅ Parfait | 11/11 | 3 | ✅ | Parfait ! Les valeurs truthy / falsy sont maîtrisées, ternaire sans comparaison.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **M4** — Le score par défaut : \|\| contre ?? | **5** | ✅ Parfait | 5/5 | 3 | ✅ | Parfait ! Le piège de `0 \|\| 'aucun'` est expliqué et corrigé à bon escient avec `??`.<br>📚 Recherche complète, testée et sourcée (MDN). |
