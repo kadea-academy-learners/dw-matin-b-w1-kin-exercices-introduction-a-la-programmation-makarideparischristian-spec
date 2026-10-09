@@ -164,7 +164,7 @@ for (let i = 1; i <= 15; i++) {
 // Résultat obtenu : 1, 2, Malewa, 4, Wewa, Malewa, 7, 8, Malewa, Wewa, 11, Malewa, 13, 14, MalewaWewa
 ```
 
-**Source :** MDN Reste (%) + Wikipédia « Fizz buzz » https://fr.wikipedia.org/wiki/Fizz_buzz
+**Source :** MDN Reste (%) https://developer.mozilla.org/fr/
 
 **IA utilisée ? (prompt + vérification sur MDN) :** oui
 
