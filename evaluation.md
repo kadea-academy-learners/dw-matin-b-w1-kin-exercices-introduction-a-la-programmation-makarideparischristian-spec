@@ -1,10 +1,10 @@
 # 📊 Évaluation automatique — Semaine 13 (JavaScript)
 
-> Générée le 2026-10-09 08:33 UTC · commit `ed09d2d` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
+> Générée le 2026-10-09 08:40 UTC · commit `2acc0e9` · évaluation déterministe basée uniquement sur le cahier d'exercices et le barème.
 
-## Note finale : **15 / 15**
+## Note finale : **14 / 15**
 
-Exercices : **93 / 95** · Parfaits : 17 / 19 · Non rendus : 0
+Exercices : **90 / 95** · Parfaits : 17 / 19 · Non rendus : 0
 
 ## 1. Résultat par exercice
 
@@ -27,7 +27,7 @@ Exercices : **93 / 95** · Parfaits : 17 / 19 · Non rendus : 0
 | **A1** — Kadea Express v2 : le calculateur de livraison | **5** | ✅ Parfait | 9/9 | 3 | ✅ | Parfait ! Règles métier, paramètre par défaut, TVA et arrondi corrects, y compris aux bornes.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **A2** — Le moteur de paie v2 | **5** | ✅ Parfait | 7/7 | 3 | ✅ | Parfait ! Accumulateur avec .forEach(), heures supplémentaires et recherche du maximum corrects.<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **A3** — L'inventaire en console | **5** | ✅ Parfait | 7/7 | 3 | ✅ | Parfait ! Tableau d'objets maîtrisé avec filter, map et find, cas undefined géré et vérifié avec console.table().<br>📚 Recherche complète, testée et sourcée (MDN). |
-| **A4** — Le classement de la promo | **4** | 🟡 Règles non respectées | 9/9 | 3 | ✅ | Les résultats sont justes, mais respecte les consignes : boucle dans calculerMoyenne, .map(), .filter(), .find() avec return, if / else if / else.<br>• Attribue la mention avec `if / else if / else`.<br>📚 Recherche complète, testée et sourcée (MDN). |
+| **A4** — Le classement de la promo | **1** | ❌ Erreur d'exécution | — | 3 | ✅ | Ton code s'arrête sur une erreur : lis le message, corrige la ligne indiquée et relance ton fichier avec node.<br>• ReferenceError: premierExcellent is not defined<br>📚 Recherche complète, testée et sourcée (MDN). |
 | **A5** — Le nombre mystère | **5** | ✅ Parfait | 4/4 | 3 | ✅ | Parfait ! Jeu complet et robuste : saisies invalides refusées sans compter l'essai, 7 essais maximum.<br>📚 Recherche complète ; privilégie une source MDN. |
 
 ## 2. Barème officiel (/15)
@@ -37,9 +37,9 @@ Exercices : **93 / 95** · Parfaits : 17 / 19 · Non rendus : 0
 | Fondations : variables, types primitifs et conversions | Avancé (100 %) | **3** | const par défaut et let uniquement pour les valeurs réassignées, choix justifiés. typeof (y compris null) et conversions Number(''), Number('abc') maîtrisés. Truthy / falsy expliqués.<br>_Preuves : F1, F2, M3_ |
 | Logique conditionnelle et opérateurs | Avancé (100 %) | **3** | Conditions ordonnées du cas le plus restrictif au plus général (FizzBuzz, DAB) et cas limites testés (0, négatif, plafond). ?? utilisé à bon escient.<br>_Preuves : F3, F4, M1, M2, M4_ |
 | Fonctions, return et portée | Avancé (96 %) | **3** | Fonctions fléchées concises (retour implicite quand c'est pertinent), paramètres par défaut, une fonction pour une responsabilité. Bug de l'ASI et bannissement de var expliqués.<br>_Preuves : F5, M2, M5, M6_ |
-| Boucles, accumulateurs et méthodes de tableau | Avancé (100 %) | **3** | Boucle adaptée choisie (for / while). Tableaux d'objets traités avec .filter(), .map(), .find() et un return dans chaque callback ; cas undefined de .find() géré ; console.table() utilisé.<br>_Preuves : F6, M1, M7, M8 ; niveau Avancé : A2, A3, A4, A5_ |
-| Recherche, qualité du code et restitution | Avancé (100 %) | **3** | RECHERCHES.md complet, testé et sourcé (MDN). Commits réguliers et explicites (un par exercice).<br>_Recherches 100 % · commits par exercice 100 % · règles de code 100 %_ |
-| **Total** | | **15 / 15** | |
+| Boucles, accumulateurs et méthodes de tableau | Compétent : Satisfaisant (100 %) | **2** | Boucle for correcte (départ, condition, pas), accumulateur initialisé avant la boucle, while avec une condition d'arrêt sûre. Résultats attendus exacts (27000 FC pour M7, 6 h pour M8).<br>_Preuves : F6, M1, M7, M8 ; niveau Avancé : A2, A3, A4, A5 (A2 à A5 doivent être réussis pour le niveau Avancé)_ |
+| Recherche, qualité du code et restitution | Avancé (99 %) | **3** | RECHERCHES.md complet, testé et sourcé (MDN). Commits réguliers et explicites (un par exercice).<br>_Recherches 100 % · commits par exercice 100 % · règles de code 95 %_ |
+| **Total** | | **14 / 15** | |
 
 ## Comment lire cette évaluation
 
